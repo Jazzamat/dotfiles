@@ -13,6 +13,28 @@ fi
 #tmux attach alias
 alias ta="tmux attach -t"
 alias 0="tmux attach -t 0"
+alias t="tmux"
+alias tks="tmux kill-server"
+alias h="nvim ~/.config/hypr/hyprland.conf"
+alias n="nvim ~/.config/nvim/init.vim"
+alias z="nvim ~/.zshrc"
+alias k="nvim ~/.config/kitty/kitty.conf"
+alias gs="git status"
+alias gl="git log"
+alias gcom="git commit -m"
+alias gp="git push"
+alias ga="git add"
+
+#keybindings
+bindkey '^n' nvim_dot
+
+#keybinding widget
+zle -N nvim_dot
+
+#keybinding functions
+function nvim_dot() {
+	nvim .
+}
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -127,6 +149,8 @@ source $ZSH/oh-my-zsh.sh
 # source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 source /home/omer/.oh-my-zsh/themes/af-magic.zsh-theme
+
+export EDITOR=nvim
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
