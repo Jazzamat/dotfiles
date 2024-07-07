@@ -7,6 +7,7 @@
 :set softtabstop=5
 :set mouse=a
 :set splitright
+:set linespace=100
 	
 "Remaping movement from hjkl to jkl;
 nnoremap j h
@@ -31,17 +32,13 @@ nnoremap ml <cmd> move -2 <cr>
 call plug#begin()
 
 Plug 'https://github.com/vim-airline/vim-airline'
+Plug 'https://github.com/vim-airline/vim-airline-themes'
 Plug 'github/copilot.vim'
-Plug 'rust-lang/rust.vim'
 Plug 'mfussenegger/nvim-jdtls'
-Plug 'https://github.com/rust-lang/rust-analyzer'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nvim-lua/plenary.nvim'
 Plug 'morhetz/gruvbox'
-Plug 'arcticicestudio/nord-vim'
 Plug 'lukas-reineke/indent-blankline.nvim'
-Plug 'rakr/vim-one'
-Plug 'dracula/vim'
 Plug 'tmsvg/pear-tree'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '1.1.5' }
 Plug 'https://github.com/nvim-telescope/telescope.nvim'
@@ -140,7 +137,14 @@ nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 " When I press enter in telescope i want to navigate to the file
 " and close telescope
 
+
+"set the colorscheme
 colorscheme tokyonight
+
+
+" set the airline theme
+autocmd VimEnter * AirlineTheme zenburn
+
 
 
 " Tree sitter highlighting
@@ -153,7 +157,6 @@ lua require("nvim-treesitter").setup({highlight=true, indent=true})
 lua require("ibl").setup()
 
 " Copilot
-autocmd VimEnter * Copilot disable
 
 
 " Rust hover intellicence
@@ -175,3 +178,7 @@ endfunction
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
 nmap [g <Plug>(coc-diagnostic-prev)
 nmap ]g <Plug>(coc-diagnostic-next)
+
+
+
+
