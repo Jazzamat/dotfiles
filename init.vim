@@ -8,6 +8,7 @@
 :set mouse=a
 :set splitright
 :set linespace=100
+:set nowrap
 	
 "Remaping movement from hjkl to jkl;
 nnoremap j h
@@ -32,6 +33,7 @@ nnoremap ml <cmd> move -2 <cr>
 call plug#begin()
 
 Plug 'https://github.com/vim-airline/vim-airline'
+Plug 'andweeb/presence.nvim'
 Plug 'https://github.com/vim-airline/vim-airline-themes'
 Plug 'github/copilot.vim'
 Plug 'mfussenegger/nvim-jdtls'
@@ -126,7 +128,10 @@ highlight! TabLineFill guibg=NONE guifg=NONE
 
 
 " TELESCOPE
-" Basic Telescope mappings
+" Basic Telescope mappings and setup
+lua require("telescope").setup({ defaults = {mappings = {n = { ["l"] = "move_selection_previous", ["k"] = "move_selection_next"},}}});
+
+
 
 " Using Lua functions
 nnoremap <A-p> <cmd>lua require('telescope.builtin').find_files()<cr>
@@ -134,9 +139,9 @@ nnoremap <A-g> <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 
+
 " When I press enter in telescope i want to navigate to the file
 " and close telescope
-
 
 "set the colorscheme
 colorscheme tokyonight
@@ -145,7 +150,9 @@ colorscheme tokyonight
 " set the airline theme
 autocmd VimEnter * AirlineTheme zenburn
 
+" Resume exploring
 
+nnoremap <leader>e <cmd>Rex<cr>
 
 " Tree sitter highlighting
 lua require("nvim-treesitter").setup({highlight=true, indent=true})
@@ -166,11 +173,11 @@ lua require("ibl").setup()
 nnoremap <leader>d  :call ShowDocumentation()<CR>
 
 function! ShowDocumentation()
-  if CocAction('hasProvider', 'hover')
-    call CocActionAsync('doHover')
-  else
-    call feedkeys('K', 'in')
-  endif
+	if CocAction('hasProvider', 'hover')
+		call CocActionAsync('doHover')
+	else
+		call feedkeys('K', 'in')
+	endif
 endfunction
 
 

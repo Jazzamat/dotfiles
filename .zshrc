@@ -17,7 +17,8 @@ alias 0="tmux attach -t 0"
 alias t="tmux"
 alias tks="tmux kill-server"
 alias h="nvim ~/.config/hypr/hyprland.conf"
-alias n="nvim ~/.config/nvim/init.vim"
+alias nn="nvim ~/.config/nvim/init.vim"
+alias n="nvim"
 alias z="nvim ~/.zshrc"
 alias k="nvim ~/.config/kitty/kitty.conf"
 alias gs="git status"
@@ -158,3 +159,5 @@ export EDITOR=nvim
 
 # To get the arch logo and deets for every new terminal
 pfetch
+
+export PATH=$PATH:/home/omer/.spicetify
