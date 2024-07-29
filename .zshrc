@@ -29,14 +29,21 @@ alias ga="git add"
 
 #keybindings
 bindkey '^n' nvim_dot
+bindkey '^f' ts
 
 #keybinding widget
 zle -N nvim_dot
+zle -N ts
 
 #keybinding functions
 function nvim_dot() {
 	nvim .
 }
+
+function ts() {
+	./ts
+}
+
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
