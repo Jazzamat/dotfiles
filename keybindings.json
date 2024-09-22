@@ -1,0 +1,324 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "shift+alt+k shift+alt+z",
+        "command": "workbench.action.toggleZenMode",
+        "when": "!isAuxiliaryWindowFocusedContext"
+    },
+    {
+        "key": "ctrl+k z",
+        "command": "-workbench.action.toggleZenMode",
+        "when": "!isAuxiliaryWindowFocusedContext"
+    },
+    {
+        "key": "shift+alt+c shift+alt+e",
+        "command": "workbench.action.toggleCenteredLayout"
+    },
+    {
+        "key": "shift+alt+e",
+        "command": "workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "-workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "shift+alt+p",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "-workbench.action.showCommands"
+    },
+    {
+        "key": "alt+p",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "shift+alt+c shift+alt+o",
+        "command": "workbench.files.action.collapseExplorerFolders"
+    },
+    {
+        "key": "shift+alt+enter",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "alt+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "shift+alt+a",
+        "command": "workbench.action.focusActivityBar"
+    },
+    {
+        "key": "shift+alt+r shift+alt+t",
+        "command": "testing.runAtCursor",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+; c",
+        "command": "-testing.runAtCursor",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+j",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "shift+alt+r shift+alt+a",
+        "command": "testing.runAll"
+    },
+    {
+        "key": "ctrl+; a",
+        "command": "-testing.runAll"
+    },
+    {
+        "key": "alt+f",
+        "command": "actions.find",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-actions.find",
+        "when": "editorFocus || editorIsOpen"
+    },
+    {
+        "key": "shift+alt+j",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "alt+a",
+        "command": "editor.action.selectAll"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "-editor.action.selectAll"
+    },
+    {
+        "key": "shift+alt+y",
+        "command": "workbench.debug.action.toggleRepl",
+        "when": "workbench.panel.repl.view.active"
+    },
+    {
+        "key": "ctrl+shift+y",
+        "command": "-workbench.debug.action.toggleRepl",
+        "when": "workbench.panel.repl.view.active"
+    },
+    {
+        "key": "alt+/",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+/",
+        "command": "-editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+s shift+alt+a",
+        "command": "editor.action.sourceAction"
+    },
+    {
+        "key": "alt+h alt+1",
+        "command": "vscode-harpoon.addEditor1"
+    },
+    {
+        "key": "alt+h alt+2",
+        "command": "vscode-harpoon.addEditor2"
+    },
+    {
+        "key": "alt+h alt+3",
+        "command": "vscode-harpoon.addEditor3"
+    },
+    {
+        "key": "alt+h alt+4",
+        "command": "vscode-harpoon.addEditor4"
+    },
+    {
+        "key": "alt+h alt+5",
+        "command": "vscode-harpoon.addEditor5"
+    },
+    {
+        "key": "\\ 1",
+        "command": "vscode-harpoon.gotoEditor1"
+    },
+    {
+        "key": "\\ 2",
+        "command": "vscode-harpoon.gotoEditor2"
+    },
+    {
+        "key": "\\ 3",
+        "command": "vscode-harpoon.gotoEditor3"
+    },
+    {
+        "key": "\\ h",
+        "command": "vscode-harpoon.editorQuickPick"
+    },
+    {
+        "key": "\\ 4",
+        "command": "vscode-harpoon.gotoEditor4"
+    },
+    {
+        "key": "\\ 5",
+        "command": "vscode-harpoon.gotoEditor5"
+    },
+    {
+        "key": "shift+alt+t shift+alt+e",
+        "command": "workbench.view.testing.focus"
+    },
+    {
+        "key": "ctrl+/",
+        "command": "editor.action.addCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+k ctrl+c",
+        "command": "-editor.action.addCommentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+h alt+6",
+        "command": "vscode-harpoon.addEditor6"
+    },
+    {
+        "key": "alt+h alt+7",
+        "command": "vscode-harpoon.addEditor7"
+    },
+    {
+        "key": "alt+h alt+8",
+        "command": "vscode-harpoon.addEditor8"
+    },
+    {
+        "key": "alt+h alt+9",
+        "command": "vscode-harpoon.addEditor9"
+    },
+    {
+        "key": "\\ 6",
+        "command": "vscode-harpoon.gotoEditor6"
+    },
+    {
+        "key": "\\ 7",
+        "command": "vscode-harpoon.gotoEditor7"
+    },
+    {
+        "key": "\\ 8",
+        "command": "vscode-harpoon.gotoEditor8"
+    },
+    {
+        "key": "\\ 9",
+        "command": "vscode-harpoon.gotoEditor9"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "workbench.action.findInFiles"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "-workbench.action.findInFiles"
+    },
+    {
+        "key": "shift+alt+o",
+        "command": "workbench.action.files.openFile",
+        "when": "true"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "-workbench.action.files.openFile",
+        "when": "true"
+    },
+    {
+        "key": "shift+alt+o",
+        "command": "workbench.action.files.openFolderViaWorkspace",
+        "when": "!openFolderWorkspaceSupport && workbenchState == 'workspace'"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "-workbench.action.files.openFolderViaWorkspace",
+        "when": "!openFolderWorkspaceSupport && workbenchState == 'workspace'"
+    },
+    {
+        "key": "alt+o",
+        "command": "workbench.action.files.openFileFolder",
+        "when": "isMacNative && openFolderWorkspaceSupport"
+    },
+    {
+        "key": "ctrl+o",
+        "command": "-workbench.action.files.openFileFolder",
+        "when": "isMacNative && openFolderWorkspaceSupport"
+    },
+    {
+        "key": "shift+alt+z",
+        "command": "workbench.action.activityBarLocation.hide"
+    },
+    {
+        "key": "j",
+        "command": "list.collapse",
+        "when": "explorerViewletFocus && !inputFocus"
+    },
+    {
+        "key": "k",
+        "command": "list.focusDown",
+        "when": "explorerViewletFocus && !inputFocus"
+    },
+    {
+        "key": "l",
+        "command": "list.focusUp",
+        "when": "explorerViewletFocus && !inputFocus"
+    },
+    {
+        "key": ";",
+        "command": "list.expand",
+        "when": "explorerViewletFocus && !inputFocus"
+    },
+    {
+        "key": "shift+alt+n",
+        "command": "welcome.showNewFileEntries"
+    },
+    {
+        "key": "ctrl+alt+meta+n",
+        "command": "-welcome.showNewFileEntries"
+    },
+    {
+        "key": "alt+n",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "shift+alt+x",
+        "command": "workbench.view.extensions",
+        "when": "viewContainer.workbench.view.extensions.enabled"
+    },
+    {
+        "key": "ctrl+shift+x",
+        "command": "-workbench.view.extensions",
+        "when": "viewContainer.workbench.view.extensions.enabled"
+    },
+    {
+        "key": "shift+alt+9",
+        "command": "workbench.action.terminal.focusAtIndex9"
+    }
+
+]
