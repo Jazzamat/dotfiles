@@ -1,0 +1,94 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.minimap.enabled": false,
+    "workbench.editorAssociations": {
+        "*.html": "default"
+    },
+    "git.openRepositoryInParentFolders": "never",
+    "editor.inlineSuggest.enabled": false,
+    "workbench.colorTheme": "Tokyo Night",
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "window.zoomLevel": 1,
+    "editor.lineNumbers": "relative",
+    "zenMode.hideLineNumbers": false,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["j"],
+            "after": ["h"]
+        },
+        {
+            "before": ["k"],
+            "after": ["j"]
+        },
+        {
+            "before": ["l"],
+            "after": ["k"]
+        },
+        {
+            "before": [";"],
+            "after": ["l"]
+        },
+        {
+            "before": ["<C-k>"],
+            "after": ["<C-d>"]
+        },
+        {
+            "before": ["<C-l>"],
+            "after": ["<C-u>"],
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["j"],
+            "after": ["h"]
+        },
+        {
+            "before": ["k"],
+            "after": ["j"]
+        },
+        {
+            "before": ["l"],
+            "after": ["k"]
+        },
+        {
+            "before": [";"],
+            "after": ["l"]
+        } , 
+        {
+            "before": ["<C-k>"],
+            "after": ["<C-d>"]
+        },
+        {
+            "before": ["<C-l>"],
+            "after": ["<C-u>"],
+        }
+    ],
+    "vim.visualBlockModeKeyBindingsNonRecursive": [
+        {
+            "before": ["j"],
+            "after": ["h"]
+        },
+        {
+            "before": ["k"],
+            "after": ["j"]
+        },
+        {
+            "before": ["l"],
+            "after": ["k"]
+        },
+        {
+            "before": [";"],
+            "after": ["l"]
+        }
+    ],
+
+
+    "zenMode.showTabs": "single",
+    "workbench.editor.editorActionsLocation": "hidden",
+    "keyboard.dispatch": "keyCode",
+}
