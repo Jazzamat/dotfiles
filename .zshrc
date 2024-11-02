@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 
-# start hyprland on startup (after log in)
+#start hyprland on startup (after log in)
 if [ "$(tty)" = "/dev/tty1" ];then
 	exec Hyprland
 fi

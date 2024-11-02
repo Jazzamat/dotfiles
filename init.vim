@@ -58,7 +58,7 @@ function! CheckBackspace() abort
   return !col || getline('.')[col - 2]  =~# '\s'
 endfunction
 
-inoremap <silent><expr> <Tab>
+inoremap <silent><expr> <C-y>
       \ coc#pum#visible() ? coc#pum#confirm() :
       \ CheckBackspace() ? "\<Tab>" :
       \ coc#refresh()
