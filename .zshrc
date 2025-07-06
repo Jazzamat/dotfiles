@@ -169,3 +169,4 @@ export EDITOR=nvim
 pfetch
 
 export PATH=$PATH:/home/omer/.spicetify
+export PATH=$PATH:/home/omer/Downloads/RustRover-2024.3.4/bin

@@ -24,7 +24,6 @@
 		"keyboard-state",
 		"battery",
 		"battery#bat2",
-		"ist-clock",
 		"clock",
 		"tray"
 	],
@@ -99,11 +98,6 @@
 		"spacing": 10
 	},
 	"clock": {
-		// "timezone": "America/New_York",
-		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-		"format-alt": "{:%Y-%m-%d}"
-	},
-	"ist-clock": {
 		"timezone": "Turkey/Istanbul",
 		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
 		"format-alt": "{:%Y-%m-%d}"
